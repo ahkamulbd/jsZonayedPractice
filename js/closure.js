@@ -9,17 +9,10 @@ function closureFunc() {
 let returnedFunc = closureFunc();
 // returnedFunc();
 
-// function aParentFunction(a) {
-//     return function (b) {
-//         console.log(`Sum = ${a + b}`);
-//     }
-// }
-
-// Above codes with arrow function:
-const aParentFunction = (a) => {
+function aParentFunction(a) {
     return function (b) {
-        console.log(`Sum = $ {a + b}`);
+        console.log(`Sum = ${a + b}`);
     }
 }
 
-aParentFunction(6)(4);
+//aParentFunction(6)(4);
